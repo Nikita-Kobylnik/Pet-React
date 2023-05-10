@@ -8,7 +8,7 @@ import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="footer" style={{ backgroundColor: "#495fac" }}>
+    <footer className="footer">
       <Container>
         <div className="footer__inner">
           <div className="footer__contacts contacts">
@@ -78,6 +78,7 @@ const Footer = () => {
           </div>
         </div>
       </Container>
+      <div className="footer__copy">2023 © Всі права захищені</div>
     </footer>
   );
 };
