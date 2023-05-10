@@ -1,12 +1,12 @@
 import React from "react";
-import Container from "../../../../components/Container/Container";
 import Title from "../../../../components/Title/Title";
 import "./Advantages.scss";
+import BigContainer from "../../../../components/BigContainer/BigContainer";
 
 const Advantages = () => {
   return (
     <section className="advantages">
-      <Container>
+      <BigContainer>
         <div className="advantages__inner">
           <Title title={"ПЕРЕВАГИ"} />
           <div className="advantages__wrapper">
@@ -36,7 +36,7 @@ const Advantages = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </BigContainer>
     </section>
   );
 };

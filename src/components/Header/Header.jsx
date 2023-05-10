@@ -1,12 +1,13 @@
 import React from "react";
 import "./Header.scss";
 import Logo from "../Logo/Logo";
+import BigContainer from "../BigContainer/BigContainer";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__container">
+      <BigContainer>
         <div className="header__inner">
           <Logo />
           <div className="header__wrapper">
@@ -36,7 +37,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </BigContainer>
     </header>
   );
 };

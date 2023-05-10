@@ -10,12 +10,6 @@
     background-color: $mainBlue;
     z-index: -1;
   }
-  &__container {
-    width: 100%;
-    max-width: 1450px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
   &__inner {
     display: flex;
     align-items: center;
