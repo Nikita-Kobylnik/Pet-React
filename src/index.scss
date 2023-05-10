@@ -1,0 +1,35 @@
+@import "./normalize.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+// Colors
+$mainBlue: #495fac;
+$black: #000000;
+$white: #ffffff;
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $black;
+  // background-color: $mainBlue;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}

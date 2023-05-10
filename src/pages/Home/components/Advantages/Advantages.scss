@@ -1,0 +1,24 @@
+@import "../../../../index.scss";
+
+.advantages {
+  &__inner {
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__img {
+    max-width: 700px;
+    height: 400px;
+    background-color: aqua;
+    img {
+      object-fit: cover;
+      // max-width: 100%;
+    }
+  }
+  &__info {
+  }
+  &__text {
+  }
+}

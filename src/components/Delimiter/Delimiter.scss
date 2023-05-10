@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+.delimiter {
+  position: relative;
+  height: 30px;
+  background-color: $mainBlue;
+  margin: 13px 0;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    background-color: $white;
+    border-radius: 32px;
+  }
+  &:before {
+    top: -12px;
+  }
+  &::after {
+    bottom: -12px;
+  }
+}
