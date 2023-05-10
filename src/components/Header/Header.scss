@@ -1,7 +1,7 @@
 @import "../../index.scss";
 .header {
   position: relative;
-  margin-bottom: 140px;
+  margin-bottom: 120px;
   &:before {
     content: "";
     position: absolute;
@@ -63,13 +63,4 @@
       cursor: pointer;
     }
   }
-}
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
 }

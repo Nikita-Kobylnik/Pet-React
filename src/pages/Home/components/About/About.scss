@@ -1,7 +1,7 @@
 @import "../../../../index.scss";
 
 .about {
-  // background-color: $white;
+  // background-color: #e7e42d;
   &__inner {
     border-radius: 27px;
     background-color: $white;
@@ -22,12 +22,5 @@
         margin-bottom: 20px;
       }
     }
-  }
-  .triangle {
-    width: 0;
-    height: 0;
-    border-top: 50px solid #000;
-    border-right: 50px solid transparent;
-    border-bottom-left-radius: 25px;
   }
 }

@@ -11,7 +11,7 @@ const Advantages = () => {
           <Title title={"ПЕРЕВАГИ"} />
           <div className="advantages__wrapper">
             <div className="advantages__img">
-              <img src="https://placehold.co/600x400" alt="" />
+              <img src="https://placehold.co/700x400" alt="" />
             </div>
             <div className="advantages__info">
               <p className="advantages__text">
