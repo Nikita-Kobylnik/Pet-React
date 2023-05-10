@@ -1,7 +1,7 @@
 @import "../../index.scss";
 .header {
   position: relative;
-  margin-bottom: 170px;
+  margin-bottom: 140px;
   &:before {
     content: "";
     position: absolute;
@@ -32,8 +32,8 @@
     }
     &__link {
       font-weight: 400;
-      font-size: 23px;
-      line-height: 27px;
+      font-size: 20px;
+      line-height: 25px;
       color: $white;
       text-decoration: none;
       padding: 5px 0;
