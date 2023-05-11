@@ -2,9 +2,10 @@ import React from "react";
 import "./Footer.scss";
 import Container from "../Container/Container";
 import Logo from "../Logo/Logo";
-import { BsInstagram, BsTelegram, BsTelephone } from "react-icons/bs";
-import { FaViber, FaMapMarkerAlt } from "react-icons/fa";
+import { BsInstagram, BsTelephone } from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { GrFacebook } from "react-icons/gr";
 
 const Footer = () => {
   return (
@@ -22,8 +23,8 @@ const Footer = () => {
             <ul className="contacts__list">
               <li className="contacts__item">
                 <BsTelephone className="contacts__icon" />
-                <a href="tel:+380000000000" className="contacts__link">
-                  +38 (000) 000 00 00
+                <a href="tel:+380960226996" className="contacts__link">
+                  +38 (096) 022-69-96
                 </a>
               </li>
               <li className="contacts__item">
@@ -38,27 +39,26 @@ const Footer = () => {
               <li className="contacts__item">
                 <FaMapMarkerAlt className="contacts__icon" />
                 <a
-                  href="https://goo.gl/maps/zfkoYiJJm3NVUP9v7?coh=178573&entry=tt"
+                  href="https://goo.gl/maps/VLTCzR4sdFNaaaUq8?coh=178573&entry=tt"
                   className="contacts__link"
                 >
-                  м. Київ, Киево-Печерская лавра
+                  В'їзд Орешкова, 1, смт. Васищево, Харківська область, Україна
                 </a>
               </li>
             </ul>
             <ul className="contacts__socials socials">
               <li className="socials__item">
-                <a href="/#" className="socials__link">
+                <a
+                  href="https://www.instagram.com/polytrade.ukraine/"
+                  target="_blank"
+                  className="socials__link"
+                >
                   <BsInstagram className="socials__icon" />
                 </a>
               </li>
               <li className="socials__item">
                 <a href="/#" className="socials__link">
-                  <BsTelegram className="socials__icon" />
-                </a>
-              </li>
-              <li className="socials__item">
-                <a href="/#" className="socials__link">
-                  <FaViber className="socials__icon" />
+                  <GrFacebook className="socials__icon" />
                 </a>
               </li>
             </ul>
@@ -66,12 +66,19 @@ const Footer = () => {
           <Logo />
           <div className="footer__map map">
             <div className="map__wrapper">
+              {/* <iframe
+                className="map__frame"
+                src=""
+                // alowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="pet"
+              ></iframe> */}
               <iframe
                 className="map__frame"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30287.33343635165!2d30.599362864106265!3d50.43302811799047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa04a0c8e5b%3A0x3b40a2bcbca08807!2z0JrQuNC10LLQvi3Qn9C10YfQtdGA0YHQutCw0Y8g0LvQsNCy0YDQsA!5e0!3m2!1sru!2sua!4v1683752614095!5m2!1sru!2sua"
-                allowfullscreen=""
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d569.4141852326176!2d36.33608875810236!3d49.8200378368434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127723c2d44ff37%3A0x8ec7db6f55cec955!2z0LLRitC10LfQtCDQntGA0LXRiNC60L7QstCwLCDQktCw0YHQuNGJ0LXQstC-LCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MjQ5NQ!5e1!3m2!1sru!2sua!4v1683798979868!5m2!1sru!2sua"
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 title="pet"
               ></iframe>
             </div>
