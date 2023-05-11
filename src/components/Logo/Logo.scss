@@ -2,9 +2,11 @@
 
 .logo {
   display: inline-block;
+  position: relative;
+  z-index: 10;
   &__img {
     width: 100%;
-    max-width: 75px;
+    max-width: 70px;
     object-fit: cover;
   }
 }

@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import Logo from "../Logo/Logo";
 import BigContainer from "../BigContainer/BigContainer";
 import { NavLink } from "react-router-dom";
+import { MdClose } from "react-icons/md";
+import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
+  const [activeBurger, setActiveBurger] = useState(false);
+
   return (
     <header className="header">
       <BigContainer>
         <div className="header__inner">
           <Logo />
-          <nav className="header__menu menu">
+          <nav className={`header__menu menu ${activeBurger ? "_active" : ""}`}>
             <ul className="menu__list">
               <li className="menu__item">
                 <NavLink to="/" className="menu__link">
@@ -34,6 +38,16 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+          <div
+            className="burger"
+            onClick={() => setActiveBurger(!activeBurger)}
+          >
+            {activeBurger ? (
+              <MdClose className="burger__close" />
+            ) : (
+              <FiMenu className="burger__icon" />
+            )}
+          </div>
         </div>
       </BigContainer>
     </header>
