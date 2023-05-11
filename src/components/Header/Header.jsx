@@ -21,12 +21,20 @@ const Header = () => {
           <nav className={`header__menu menu ${activeBurger ? "_active" : ""}`}>
             <ul className="menu__list">
               <li className="menu__item">
-                <NavLink to="/" className="menu__link">
+                <NavLink
+                  to="/"
+                  className="menu__link"
+                  onClick={() => setActiveBurger(!activeBurger)}
+                >
                   Про компанію
                 </NavLink>
               </li>
               <li className="menu__item">
-                <NavLink to="/products" className="menu__link">
+                <NavLink
+                  to="/products"
+                  className="menu__link"
+                  onClick={() => setActiveBurger(!activeBurger)}
+                >
                   Продукція
                 </NavLink>
               </li>
