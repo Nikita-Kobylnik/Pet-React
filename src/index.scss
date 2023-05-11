@@ -30,6 +30,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: $black;
   // background-color: $mainBlue;
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 ul {

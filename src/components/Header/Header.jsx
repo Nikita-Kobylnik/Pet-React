@@ -9,6 +9,10 @@ import { FiMenu } from "react-icons/fi";
 const Header = () => {
   const [activeBurger, setActiveBurger] = useState(false);
 
+  activeBurger
+    ? document.body.classList.add("_lock")
+    : document.body.classList.remove("_lock");
+
   return (
     <header className="header">
       <BigContainer>
