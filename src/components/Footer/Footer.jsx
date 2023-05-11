@@ -51,13 +51,19 @@ const Footer = () => {
                 <a
                   href="https://www.instagram.com/polytrade.ukraine/"
                   target="_blank"
+                  rel="noreferrer"
                   className="socials__link"
                 >
                   <BsInstagram className="socials__icon" />
                 </a>
               </li>
               <li className="socials__item">
-                <a href="/#" className="socials__link">
+                <a
+                  href="https://www.facebook.com/pages/category/E-commerce-Website/Poly-Trade-101153351741542/"
+                  className="socials__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <GrFacebook className="socials__icon" />
                 </a>
               </li>
