@@ -3,6 +3,7 @@ import "./Header.scss";
 import Logo from "../Logo/Logo";
 import BigContainer from "../BigContainer/BigContainer";
 import { NavLink } from "react-router-dom";
+import Menu from "react-burger-menu/lib/menus/slide";
 
 const Header = () => {
   return (
