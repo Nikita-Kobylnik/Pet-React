@@ -4,12 +4,13 @@ import Container from "../../../../components/Container/Container";
 import Title from "../../../../components/Title/Title";
 import { AiFillCheckCircle } from "react-icons/ai";
 import Delimiter from "../../../../components/Delimiter/Delimiter";
+import Block from "../../../../components/Block/Block";
 
 const Directions = () => {
   return (
     <section className="directions">
       <Container>
-        <div className="directions__inner">
+        <Block>
           <Title title={"ОСНОВНІ НАПРЯМКИ"} />
           <ul className="directions__list">
             <li className="directions__item">
@@ -63,7 +64,7 @@ const Directions = () => {
               </p>
             </li>
           </ul>
-        </div>
+        </Block>
       </Container>
       <Delimiter />
     </section>

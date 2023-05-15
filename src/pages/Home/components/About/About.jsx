@@ -3,12 +3,13 @@ import "./About.scss";
 import Container from "../../../../components/Container/Container";
 import Title from "../../../../components/Title/Title";
 import Delimiter from "../../../../components/Delimiter/Delimiter";
+import Block from "../../../../components/Block/Block";
 
 const About = () => {
   return (
     <section className="about">
       <Container>
-        <div className="about__inner">
+        <Block>
           <Title title={"ПРО КОМПАНІЮ"} />
           <div className="about__info info">
             <p className="info__text">
@@ -41,7 +42,7 @@ const About = () => {
               продукцію, а й за всебічну підтримку, яку ми надаємо.
             </p>
           </div>
-        </div>
+        </Block>
       </Container>
       <Delimiter />
     </section>

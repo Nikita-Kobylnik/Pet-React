@@ -9,9 +9,15 @@ import { FiMenu } from "react-icons/fi";
 const Header = () => {
   const [activeBurger, setActiveBurger] = useState(false);
 
-  activeBurger
-    ? document.body.classList.add("_lock")
-    : document.body.classList.remove("_lock");
+  const handleBurgerClick = () => {
+    setActiveBurger(!activeBurger);
+    const isMobile = window.innerWidth < 576.98;
+    if (isMobile && !activeBurger) {
+      document.body.classList.add("_lock");
+    } else {
+      document.body.classList.remove("_lock");
+    }
+  };
 
   return (
     <header className="header">
@@ -24,7 +30,7 @@ const Header = () => {
                 <NavLink
                   to="/"
                   className="menu__link"
-                  onClick={() => setActiveBurger(!activeBurger)}
+                  onClick={handleBurgerClick}
                 >
                   Про компанію
                 </NavLink>
@@ -33,7 +39,7 @@ const Header = () => {
                 <NavLink
                   to="/products"
                   className="menu__link"
-                  onClick={() => setActiveBurger(!activeBurger)}
+                  onClick={handleBurgerClick}
                 >
                   Продукція
                 </NavLink>
@@ -50,10 +56,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div
-            className="burger"
-            onClick={() => setActiveBurger(!activeBurger)}
-          >
+          <div className="burger" onClick={handleBurgerClick}>
             {activeBurger ? (
               <MdClose className="burger__close" />
             ) : (
