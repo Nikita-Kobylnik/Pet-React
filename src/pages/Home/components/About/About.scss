@@ -11,6 +11,16 @@
       &:not(:last-child) {
         margin-bottom: 20px;
       }
+      @media (max-width: $lg) {
+        font-size: 15px;
+        line-height: 30px;
+      }
+      @media (max-width: $md) {
+      }
+      @media (max-width: $sm) {
+        font-size: 15px;
+        line-height: 26px;
+      }
     }
   }
 }
