@@ -9,6 +9,26 @@
 
 .my-slider {
   // max-width: 950px;
+  @media (max-width: $sm) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      &::after {
+        font-size: 35px;
+      }
+    }
+    .swiper-button-prev {
+      &:after {
+        position: absolute;
+        left: -8px;
+      }
+    }
+    .swiper-button-next {
+      &:after {
+        position: absolute;
+        right: -8px;
+      }
+    }
+  }
 }
 .swiper-wrapper {
   // max-width: 950px;
@@ -21,4 +41,29 @@
   color: $black;
   text-align: center;
   margin-bottom: 10px;
+  @media (max-width: $lg) {
+    font-size: 30px;
+  }
+  @media (max-width: $md) {
+    font-size: 25px;
+  }
+  @media (max-width: $sm) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    color: $mainBlue;
+  }
+}
+.swiper-button-next {
+  &::after {
+    color: $mainBlue;
+  }
+}
+@media (max-width: $lg) {
+}
+@media (max-width: $md) {
 }

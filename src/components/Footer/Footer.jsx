@@ -72,14 +72,6 @@ const Footer = () => {
           <Logo />
           <div className="footer__map map">
             <div className="map__wrapper">
-              {/* <iframe
-                className="map__frame"
-                src=""
-                // alowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="pet"
-              ></iframe> */}
               <iframe
                 className="map__frame"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d569.4141852326176!2d36.33608875810236!3d49.8200378368434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127723c2d44ff37%3A0x8ec7db6f55cec955!2z0LLRitC10LfQtCDQntGA0LXRiNC60L7QstCwLCDQktCw0YHQuNGJ0LXQstC-LCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MjQ5NQ!5e1!3m2!1sru!2sua!4v1683798979868!5m2!1sru!2sua"
