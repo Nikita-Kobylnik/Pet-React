@@ -5,6 +5,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    @media (max-width: $md) {
+      row-gap: 12px;
+    }
+    @media (max-width: $sm) {
+      row-gap: 8px;
+    }
   }
   &__item {
     display: flex;
@@ -20,5 +26,37 @@
     font-size: 17px;
     line-height: 36px;
     color: $black;
+    position: relative;
+    padding-left: 25px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-image: url("../../../../assets/icons/check.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 17px;
+    }
+    @media (max-width: $lg) {
+      font-size: 15px;
+      line-height: 30px;
+      &::before {
+        top: 15px;
+      }
+    }
+    @media (max-width: $md) {
+    }
+    @media (max-width: $sm) {
+      font-size: 13px;
+      line-height: 22px;
+      &::before {
+        width: 13px;
+        height: 13px;
+      }
+    }
   }
 }

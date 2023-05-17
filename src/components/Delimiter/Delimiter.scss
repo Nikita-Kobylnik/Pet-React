@@ -11,6 +11,7 @@
     position: absolute;
     width: 100%;
     height: 24px;
+
     background-color: $white;
     border-radius: 32px;
   }
@@ -19,5 +20,20 @@
   }
   &::after {
     bottom: -12px;
+  }
+}
+@media (max-width: $md) {
+  .delimiter {
+    height: 25px;
+    &:before,
+    &:after {
+      height: 20px;
+    }
+    &:before {
+      top: -10px;
+    }
+    &::after {
+      bottom: -10px;
+    }
   }
 }
