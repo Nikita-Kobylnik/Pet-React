@@ -3,7 +3,7 @@ import Title from "../../../../components/Title/Title";
 import "./Advantages.scss";
 import BigContainer from "../../../../components/BigContainer/BigContainer";
 import Block from "../../../../components/Block/Block";
-import video from "../../../../assets/video/vid.MP4";
+import gif from "../../../../assets/video/pet-gif.gif";
 
 const Advantages = () => {
   return (
@@ -13,10 +13,10 @@ const Advantages = () => {
           <Title title={"ПЕРЕВАГИ"} />
           <div className="advantages__wrapper">
             <div className="advantages__img">
-              {/* <img src="https://placehold.co/700x400" alt="" /> */}
-              <video autoPlay muted loop>
+              <img src={gif} alt="" />
+              {/* <video autoPlay muted loop>
                 <source src={video} type="video/mp4" />
-              </video>
+              </video> */}
             </div>
             <div className="advantages__info">
               <p className="advantages__text">
