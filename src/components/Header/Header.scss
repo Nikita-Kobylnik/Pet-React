@@ -39,7 +39,10 @@
       font-size: 20px;
       line-height: 25px;
       color: $white;
+      background-color: transparent;
+      border: none;
       text-decoration: none;
+      cursor: pointer;
       padding: 5px 0;
       &::before {
         content: "";
